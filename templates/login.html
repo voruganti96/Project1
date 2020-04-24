@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration
+    </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(https://josephciarrochi.com/wp-content/uploads/2019/03/stack-of-open-book-in-wind-green-garden-background_ha0sz8sc_thumbnail-full01.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        
+        #h1 {
+            background-color: rgb(450, 0, 64, 0.4);
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Times New Roman';
+            color: rgb(2, 0, 0);
+        }
+        
+        div {
+            margin: 40px;
+        }
+        
+        .naming {
+            color: rgb(56, 7, 7);
+            line-height: 50px;
+            font-size: 20px;
+        }
+        
+        button {
+            font-size: large;
+        }
+        
+        button:hover {
+            background-color: rgb(212, 207, 207);
+        }
+    </style>
+    <link rel="stylesheet" href="design.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="https://josephciarrochi.com/wp-content/uploads/2019/03/stack-of-open-book-in-wind-green-garden-background_ha0sz8sc_thumbnail-full01.png">
+</head>
+
+<body>
+    <h1 id="h1">USER LOGIN</h1>
+    <div>
+        <form action="{{url_for('login')}}" method="POST">
+            <h3>{{message}}</h3>
+            <label class="naming" for="name">Full Name: </label>
+            <input type="text" name="name" placeholder="full name"><br>
+            <label class="naming" for="password">Enter Password: </label>
+            <input type="password" name="password" placeholder="password"><br>
+            <button>LOGIN</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
